@@ -1,0 +1,44 @@
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#menu li a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#menu li.active {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#menu li.active a {
+  color: #fff;
+}
+
+#menu li:hover {
+  background: #fff;
+}
+
+#menu li:hover a {
+  color: black;
+}
+
+#sect-home {
+  text-align: center;
+}

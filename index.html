@@ -3,21 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Andrew Furth | Full Stack Web Developer</title>
+  <!-- ADD METADATA -->
 
+  <!-- fullpage.js CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
+  <ul id="menu">
+      <li data-menuanchor="home" class="active" ><a href="#home">Home</a></li>
+      <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+      <li data-menuanchor="about"><a href="#about">About</a></li>
+  </ul>
 
   <div id="fullpage">
       <div class="section" id="sect-home">
-        <h1>Home Section</h1>
-        <p>This section will contain:
-          <ul>
-            <li>My name</li>
-            <li>One sentence description of my background</li>
-            <li>Links/Contact Info</li>
-          </ul>
-        </p>
+        <h1>Andrew Furth</h1>
+        <h2>Full Stack Software Developer</h2>
       </div>
       <div class="section" id="sect-portfolio">
         <h1>Portfolio Section</h1>
@@ -43,8 +59,8 @@
   </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.js"></script>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
