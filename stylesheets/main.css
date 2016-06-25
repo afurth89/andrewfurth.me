@@ -39,6 +39,10 @@
   color: black;
 }
 
-#sect-home {
+#sect-home, #sect-portfolio, #sect-about {
   text-align: center;
+}
+
+#sect-home div a {
+  margin: 0 5px;
 }
