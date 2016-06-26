@@ -15,9 +15,10 @@ var projects = [
 ];
 
 var fragment = document.createDocumentFragment();
+var projContainer  = make("div");
 
 projects.forEach(function(project) {
-  var div  = make("div"),
+  var proj  = make("div"),
       a    = make("a"),
       code = make('a'),
       h2   = make("h2"),
@@ -25,7 +26,8 @@ projects.forEach(function(project) {
 
   a.href = project.url;
   h2.innerHTML = project.name.replace(/-/g, " ");
-  img.src = "images/" + project.name + ".png";
+  var imgName = project.name.replace(/\W/g,"");
+  img.src = "images/" + imgName + ".png";
   a.appendChild(h2);
   a.appendChild(img);
 
@@ -33,12 +35,14 @@ projects.forEach(function(project) {
   code.innerHTML = 'Source code';
   code.href = project.code;
 
-  div.appendChild(a);
-  div.appendChild(code);
-  div.className = "project";
-  fragment.appendChild(div);
+  proj.appendChild(a);
+  proj.appendChild(code);
+  proj.className = "project";
+  projContainer.appendChild(proj);
 });
 
+projContainer.className = "project-container"
+fragment.appendChild(projContainer);
 document.getElementById("sect-portfolio").appendChild(fragment);
 
 function make(tag) {
