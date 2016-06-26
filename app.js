@@ -10,7 +10,9 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// Start Server
-app.listen(3000, function() {
-  console.log("Starting a server on localhost:3000");
+var port = process.env.PORT || 3000;
+app.listen(port, ()=>{
+  console.log('Server listening on port '+port+'...');
 });
+
+module.exports = app;
