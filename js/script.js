@@ -23,6 +23,7 @@ projects.forEach(function(project) {
       code = make('a'),
       h2   = make("h2"),
       img  = make("img")
+      ghIcon = make('i')
 
   a.href = project.url;
   h2.innerHTML = project.name.replace(/-/g, " ");
@@ -32,8 +33,9 @@ projects.forEach(function(project) {
   a.appendChild(img);
 
   code.className = 'code';
-  code.innerHTML = 'Source code';
   code.href = project.code;
+  ghIcon.className = "fa fa-github fa-5x"
+  code.appendChild(ghIcon)
 
   proj.appendChild(a);
   proj.appendChild(code);
