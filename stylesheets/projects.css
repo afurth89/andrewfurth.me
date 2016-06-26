@@ -17,12 +17,17 @@
   margin-right: 2.5%;
 }
 
+.project:hover {
+  background-color: #A9A9A9;
+}
+
 .project img {
   display: block;
   width: 80%;
   margin: 0 auto;
   text-align: center;
   border-radius: 8px;
+  border:1px solid #021a40;
 }
 
 .proj-tech, .proj-description {
