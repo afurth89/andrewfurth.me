@@ -45,7 +45,7 @@ projects.forEach(function(project) {
   techUsed.innerHTML = project.tech
   
   var imgName = project.name.replace(/\W/g,"");
-  img.src = "images/" + imgName + ".png";
+  img.src = "/images/" + imgName + ".png";
   
   a.appendChild(h2);
   a.appendChild(img);
