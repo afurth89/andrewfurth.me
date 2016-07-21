@@ -66,7 +66,7 @@ projects.forEach(function(project) {
 
 projContainer.className = "project-container"
 fragment.appendChild(projContainer);
-document.getElementById("sect-portfolio").appendChild(fragment);
+document.getElementById("sect-portfolio-p2").appendChild(fragment);
 
 function make(tag) {
   return document.createElement(tag);

@@ -36,3 +36,8 @@
   margin: 10px auto;
   text-align: left;
 }
+
+.project>a {
+  text-align: center;
+  display: block;
+}
