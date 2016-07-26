@@ -11,7 +11,7 @@ var projects = [
   { name: 'O.S.Q.A.R', url: 'http://osqarlearning.com/',
     ghURL: github + 'OSQAR', 
     description: "'O.S.Q.A.R', or the Open Source Question & Answer Resource, is a web application that allows teachers to create and administer custom assessments in minutes by being able to incorporate any question created by other teachers on the platform.",
-    tech: "Front end: AngularJS, nvD3 Angular visualization library, Bootstrap/Bootswatch, and Javascript.  Back-end" },
+    tech: "Front end: AngularJS, nvD3 Angular visualization library, Bootstrap/Bootswatch, and Javascript. <br> Back-end: Node.js and Express, with a MongoDB database, Mongoose and Bluebird Promise Library" },
   { name: 'What Country Am I?', url: 'http://andrew-furth-geography-game.bitballoon.com/',
     ghURL: github + 'WhatCountryAmI', 
     description: "A geography web application to allow users to build and test their knowledge of the world's geography by seeing how many countries they can identify in a set time-period. ",
