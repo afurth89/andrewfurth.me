@@ -54,7 +54,7 @@ projects.forEach(function(project) {
   techUsed.innerHTML = project.tech
   
   // Project Image
-  var imgName = project.name.replace(/\W/g,"");
+  var imgName = project.name.replace(/\W/g,"").toLowerCase();
   img.src = "/images/" + imgName + ".png";
   
   // Append title and image to top 'a' tag
